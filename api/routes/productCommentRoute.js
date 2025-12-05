@@ -5,7 +5,7 @@ import {
   parseContinuationToken,
   buildCursorWhere,
 } from "../utils/cursor-pagination.js";
-import { prisma } from "../prisma/prisma.js";
+import { prisma } from "../../prisma/prisma.js";
 import { ProductComment } from "./comment.js";
 
 const productCommentRouter = new Router({ mergeParams: true });

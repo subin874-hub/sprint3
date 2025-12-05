@@ -1,9 +1,9 @@
 import { Product, UnregisteredProduct } from "./product.js";
 import { Router } from "express";
-import { prisma } from "../prisma/prisma.js";
+import { prisma } from "../../prisma/prisma.js";
 import { BadRequestError, NotFoundError } from "../errors/customErrors.js";
-import productCommentRouter from "./product-comment.route.js";
-import productImageRouter from "./product-image.route.js";
+import productCommentRouter from "./productCommentRoute.js";
+import productImageRouter from "./productImageRoute.js";
 
 const productRouter = new Router();
 

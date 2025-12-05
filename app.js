@@ -1,10 +1,10 @@
 import express from "express";
 import cors from "cors";
-import articleRouter from "./routes/articleRoute.js";
-import { HttpError } from "./errors/customErrors.js";
+import articleRouter from "./api/routes/articleRoute.js";
+import { HttpError } from "./api/errors/customErrors.js";
 
 import { config } from "dotenv";
-import productRouter from "./routes/productRoute.js";
+import productRouter from "./api/routes/productRoute.js";
 config(); // .env 읽어서 process.env.아래 위치시키기
 
 const app = express();

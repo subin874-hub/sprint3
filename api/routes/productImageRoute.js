@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { prisma } from "../prisma/prisma.js";
+import { prisma } from "../../prisma/prisma.js";
 import multer from "multer";
 import _path from "path";
 import fs from "fs/promises";
